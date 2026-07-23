@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* ─── Design Tokens ──────────────────────────────────────── */
+:root {
+  --background: #0a0a0a;
+  --foreground: #f0f0f0;
+
+  --marvel-red: #e23636;
+  --marvel-gold: #f78f3f;
+
+  --primary: #ffffff;
+  --secondary: #a0a0a0;
+  --muted: #333333;
+  --border: #222222;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-cinematic: 'Cinzel', serif;
+}
+
+/* ─── Base Styles ────────────────────────────────────────── */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cinematic);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ─── Tailwind v4 theme overrides ─────────────────────────  */
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-marvelRed: var(--marvel-red);
+  --color-marvelGold: var(--marvel-gold);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-cinematic: 'Cinzel', serif;
+}
+
+/* ─── Scrollbar ───────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--background); }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--marvel-red); }
+
+/* ─── Lenis smooth scroll ─────────────────────────────────── */
+html.lenis { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }

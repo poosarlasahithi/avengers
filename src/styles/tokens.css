@@ -1,0 +1,28 @@
+:root {
+  --background: #0a0a0a;
+  --foreground: #f0f0f0;
+  
+  --marvel-red: #e23636;
+  --marvel-gold: #f78f3f;
+  
+  --primary: #ffffff;
+  --secondary: #a0a0a0;
+  --muted: #333333;
+  --border: #222222;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-cinematic: 'Cinzel', serif;
+}
+
+[data-theme='light'] {
+  --background: #f0f0f0;
+  --foreground: #0a0a0a;
+  
+  --marvel-red: #d32f2f;
+  --marvel-gold: #e65100;
+  
+  --primary: #000000;
+  --secondary: #666666;
+  --muted: #cccccc;
+  --border: #dddddd;
+}
