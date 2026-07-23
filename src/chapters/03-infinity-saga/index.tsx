@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from '../../lib/gsapConfig';
-import { ScrollTrigger } from '../../lib/gsapConfig';
 
 const STONES = [
   { name: 'Space',    color: '#3b82f6', description: 'Controls space, grants the user the power to exist anywhere.' },

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { timelineData } from '../../data/timeline';
 
@@ -22,7 +22,7 @@ const InteractiveTimeline: React.FC = () => {
             {/* Vertical line */}
             <div className="absolute left-5 top-0 bottom-0 w-[2px] bg-gray-800 z-0" />
 
-            {timelineData.map((event, i) => (
+            {timelineData.map((event) => (
               <button
                 key={event.id}
                 onClick={() => setSelected(event.id)}
